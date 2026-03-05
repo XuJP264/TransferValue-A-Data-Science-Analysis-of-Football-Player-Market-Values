@@ -66,12 +66,30 @@ def discover_data_files(dataset_root: Path) -> list[Path]:
 
 def try_read_csv(path: Path, sep: str, nrows: int) -> pd.DataFrame:
     encodings = ["utf-8", "utf-8-sig", "latin1"]
+    separators = [sep, ";", "\t", "|", None]
     last_err: Exception | None = None
     for enc in encodings:
-        try:
-            return pd.read_csv(path, sep=sep, nrows=nrows, low_memory=False, encoding=enc)
-        except Exception as err:  # pragma: no cover - defensive
-            last_err = err
+        for candidate_sep in separators:
+            kwargs: dict[str, Any] = {
+                "nrows": nrows,
+                "low_memory": False,
+                "encoding": enc,
+            }
+            if candidate_sep is None:
+                kwargs["sep"] = None
+                kwargs["engine"] = "python"
+                kwargs["on_bad_lines"] = "skip"
+            else:
+                kwargs["sep"] = candidate_sep
+                kwargs["on_bad_lines"] = "skip"
+            try:
+                df = pd.read_csv(path, **kwargs)
+                # Reject clearly broken one-column parses when auto-detect can do better.
+                if df.shape[1] <= 1 and candidate_sep not in {None, ";"}:
+                    continue
+                return df
+            except Exception as err:  # pragma: no cover - defensive
+                last_err = err
     if last_err:
         raise last_err
     raise RuntimeError(f"Failed to read {path}")
@@ -243,7 +261,7 @@ def build_dataset_structure_markdown(dataset_results: dict[str, dict[str, Any]])
     lines: list[str] = ["# Dataset Structure Overview", ""]
 
     for dataset_label, payload in dataset_results.items():
-        lines.append(f"## {dataset_label} — {payload['folder_name']}")
+        lines.append(f"## {dataset_label} - {payload['folder_name']}")
         lines.append("")
         lines.append("### Folder structure")
         lines.append("")
