@@ -1,0 +1,837 @@
+[
+  {
+    "file": "player_performances.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/player_performances/player_performances.csv",
+    "status": "OK",
+    "rows": 1878719,
+    "columns": 20,
+    "column_names": [
+      "player_id",
+      "season_name",
+      "competition_id",
+      "competition_name",
+      "team_id",
+      "team_name",
+      "nb_in_group",
+      "nb_on_pitch",
+      "goals",
+      "assists",
+      "own_goals",
+      "subed_in",
+      "subed_out",
+      "yellow_cards",
+      "second_yellow_cards",
+      "direct_red_cards",
+      "penalty_goals",
+      "minutes_played",
+      "goals_conceded",
+      "clean_sheets"
+    ],
+    "dtypes": {
+      "player_id": "int64",
+      "season_name": "object",
+      "competition_id": "object",
+      "competition_name": "object",
+      "team_id": "int64",
+      "team_name": "object",
+      "nb_in_group": "int64",
+      "nb_on_pitch": "int64",
+      "goals": "float64",
+      "assists": "int64",
+      "own_goals": "int64",
+      "subed_in": "int64",
+      "subed_out": "int64",
+      "yellow_cards": "int64",
+      "second_yellow_cards": "int64",
+      "direct_red_cards": "int64",
+      "penalty_goals": "int64",
+      "minutes_played": "float64",
+      "goals_conceded": "int64",
+      "clean_sheets": "int64"
+    },
+    "missing_rate": {
+      "player_id": 0.0,
+      "season_name": 0.0,
+      "competition_id": 0.0,
+      "competition_name": 0.0,
+      "team_id": 0.0,
+      "team_name": 0.0,
+      "nb_in_group": 0.0,
+      "nb_on_pitch": 0.0,
+      "goals": 0.0736,
+      "assists": 0.0,
+      "own_goals": 0.0,
+      "subed_in": 0.0,
+      "subed_out": 0.0,
+      "yellow_cards": 0.0,
+      "second_yellow_cards": 0.0,
+      "direct_red_cards": 0.0,
+      "penalty_goals": 0.0,
+      "minutes_played": 0.6231,
+      "goals_conceded": 0.0,
+      "clean_sheets": 0.0
+    },
+    "nunique": {
+      "player_id": 88375,
+      "season_name": 102,
+      "competition_id": 1643,
+      "competition_name": 1988,
+      "team_id": 13511,
+      "team_name": 15411,
+      "nb_in_group": 51,
+      "nb_on_pitch": 52,
+      "goals": 48,
+      "assists": 29,
+      "own_goals": 9,
+      "subed_in": 38,
+      "subed_out": 37,
+      "yellow_cards": 21,
+      "second_yellow_cards": 6,
+      "direct_red_cards": 5,
+      "penalty_goals": 15,
+      "minutes_played": 3933,
+      "goals_conceded": 97,
+      "clean_sheets": 30
+    },
+    "numeric_stats": {
+      "player_id": {
+        "min": 1.0,
+        "max": 1453181.0,
+        "mean": 291629.48061684583
+      },
+      "team_id": {
+        "min": 1.0,
+        "max": 134550.0,
+        "mean": 10692.977300490387
+      },
+      "nb_in_group": {
+        "min": 1.0,
+        "max": 51.0,
+        "mean": 9.929084658216583
+      },
+      "nb_on_pitch": {
+        "min": 0.0,
+        "max": 51.0,
+        "mean": 8.156782893024449
+      },
+      "goals": {
+        "min": 0.0,
+        "max": 50.0,
+        "mean": 0.95271922078325
+      },
+      "assists": {
+        "min": 0.0,
+        "max": 29.0,
+        "mean": 0.44694549850190474
+      },
+      "own_goals": {
+        "min": 0.0,
+        "max": 9.0,
+        "mean": 0.01532852970561324
+      },
+      "subed_in": {
+        "min": 0.0,
+        "max": 38.0,
+        "mean": 1.6731634693639656
+      },
+      "subed_out": {
+        "min": 0.0,
+        "max": 40.0,
+        "mean": 1.8559928334146831
+      },
+      "yellow_cards": {
+        "min": 0.0,
+        "max": 21.0,
+        "mean": 1.111522265969525
+      },
+      "second_yellow_cards": {
+        "min": 0.0,
+        "max": 5.0,
+        "mean": 0.0339406797929866
+      },
+      "direct_red_cards": {
+        "min": 0.0,
+        "max": 4.0,
+        "mean": 0.03513723978945228
+      },
+      "penalty_goals": {
+        "min": 0.0,
+        "max": 14.0,
+        "mean": 0.07551528461680539
+      },
+      "minutes_played": {
+        "min": 1.0,
+        "max": 4590.0,
+        "mean": 606.1812299745396
+      },
+      "goals_conceded": {
+        "min": -1.0,
+        "max": 111.0,
+        "mean": 0.8014998517606944
+      },
+      "clean_sheets": {
+        "min": 0.0,
+        "max": 29.0,
+        "mean": 0.19110734495153348
+      }
+    },
+    "player_id_dtype": "int64"
+  },
+  {
+    "file": "player_profiles.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/player_profiles/player_profiles.csv",
+    "status": "OK",
+    "rows": 92671,
+    "columns": 34,
+    "column_names": [
+      "player_id",
+      "player_slug",
+      "player_name",
+      "player_image_url",
+      "name_in_home_country",
+      "date_of_birth",
+      "place_of_birth",
+      "country_of_birth",
+      "height",
+      "citizenship",
+      "is_eu",
+      "position",
+      "main_position",
+      "foot",
+      "current_club_id",
+      "current_club_name",
+      "joined",
+      "contract_expires",
+      "outfitter",
+      "social_media_url",
+      "player_agent_id",
+      "player_agent_name",
+      "contract_option",
+      "date_of_last_contract_extension",
+      "on_loan_from_club_id",
+      "on_loan_from_club_name",
+      "contract_there_expires",
+      "second_club_url",
+      "second_club_name",
+      "third_club_url",
+      "third_club_name",
+      "fourth_club_url",
+      "fourth_club_name",
+      "date_of_death"
+    ],
+    "dtypes": {
+      "player_id": "int64",
+      "player_slug": "object",
+      "player_name": "object",
+      "player_image_url": "object",
+      "name_in_home_country": "object",
+      "date_of_birth": "object",
+      "place_of_birth": "object",
+      "country_of_birth": "object",
+      "height": "float64",
+      "citizenship": "object",
+      "is_eu": "bool",
+      "position": "object",
+      "main_position": "object",
+      "foot": "object",
+      "current_club_id": "int64",
+      "current_club_name": "object",
+      "joined": "object",
+      "contract_expires": "object",
+      "outfitter": "object",
+      "social_media_url": "object",
+      "player_agent_id": "float64",
+      "player_agent_name": "object",
+      "contract_option": "object",
+      "date_of_last_contract_extension": "object",
+      "on_loan_from_club_id": "float64",
+      "on_loan_from_club_name": "object",
+      "contract_there_expires": "object",
+      "second_club_url": "object",
+      "second_club_name": "object",
+      "third_club_url": "object",
+      "third_club_name": "object",
+      "fourth_club_url": "object",
+      "fourth_club_name": "object",
+      "date_of_death": "object"
+    },
+    "missing_rate": {
+      "player_id": 0.0,
+      "player_slug": 0.0,
+      "player_name": 0.0056,
+      "player_image_url": 0.0,
+      "name_in_home_country": 0.4642,
+      "date_of_birth": 0.0109,
+      "place_of_birth": 0.1795,
+      "country_of_birth": 0.1796,
+      "height": 0.0,
+      "citizenship": 0.0006,
+      "is_eu": 0.0,
+      "position": 0.0,
+      "main_position": 0.0,
+      "foot": 0.2535,
+      "current_club_id": 0.0,
+      "current_club_name": 0.0,
+      "joined": 0.0365,
+      "contract_expires": 0.5828,
+      "outfitter": 0.9357,
+      "social_media_url": 0.7805,
+      "player_agent_id": 0.5893,
+      "player_agent_name": 0.5373,
+      "contract_option": 0.9615,
+      "date_of_last_contract_extension": 0.9098,
+      "on_loan_from_club_id": 0.9594,
+      "on_loan_from_club_name": 0.9594,
+      "contract_there_expires": 0.973,
+      "second_club_url": 0.9894,
+      "second_club_name": 0.9894,
+      "third_club_url": 0.9995,
+      "third_club_name": 0.9995,
+      "fourth_club_url": 1.0,
+      "fourth_club_name": 1.0,
+      "date_of_death": 0.9971
+    },
+    "nunique": {
+      "player_id": 92671,
+      "player_slug": 87949,
+      "player_name": 92151,
+      "player_image_url": 54552,
+      "name_in_home_country": 49566,
+      "date_of_birth": 14130,
+      "place_of_birth": 15510,
+      "country_of_birth": 204,
+      "height": 59,
+      "citizenship": 2689,
+      "is_eu": 2,
+      "position": 17,
+      "main_position": 4,
+      "foot": 3,
+      "current_club_id": 11859,
+      "current_club_name": 11848,
+      "joined": 3423,
+      "contract_expires": 192,
+      "outfitter": 39,
+      "social_media_url": 20321,
+      "player_agent_id": 4842,
+      "player_agent_name": 4821,
+      "contract_option": 16,
+      "date_of_last_contract_extension": 1155,
+      "on_loan_from_club_id": 1348,
+      "on_loan_from_club_name": 1347,
+      "contract_there_expires": 45,
+      "second_club_url": 437,
+      "second_club_name": 833,
+      "third_club_url": 23,
+      "third_club_name": 32,
+      "fourth_club_url": 1,
+      "fourth_club_name": 1,
+      "date_of_death": 265
+    },
+    "numeric_stats": {
+      "player_id": {
+        "min": 1.0,
+        "max": 1459023.0,
+        "mean": 482201.9622104002
+      },
+      "height": {
+        "min": 0.0,
+        "max": 210.0,
+        "mean": 144.61990784205813
+      },
+      "current_club_id": {
+        "min": 1.0,
+        "max": 134553.0,
+        "mean": 17268.764834737944
+      },
+      "player_agent_id": {
+        "min": 1.0,
+        "max": 15015.0,
+        "mean": 5654.31416033844
+      },
+      "on_loan_from_club_id": {
+        "min": 2.0,
+        "max": 132806.0,
+        "mean": 14245.704364023417
+      }
+    },
+    "player_id_dtype": "int64"
+  },
+  {
+    "file": "player_market_value.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/player_market_value/player_market_value.csv",
+    "status": "OK",
+    "rows": 901429,
+    "columns": 3,
+    "column_names": [
+      "player_id",
+      "date_unix",
+      "value"
+    ],
+    "dtypes": {
+      "player_id": "int64",
+      "date_unix": "object",
+      "value": "float64"
+    },
+    "missing_rate": {
+      "player_id": 0.0,
+      "date_unix": 0.0,
+      "value": 0.0
+    },
+    "nunique": {
+      "player_id": 69441,
+      "date_unix": 6871,
+      "value": 486
+    },
+    "numeric_stats": {
+      "player_id": {
+        "min": 1.0,
+        "max": 1407924.0,
+        "mean": 277556.92506009905
+      },
+      "value": {
+        "min": 0.0,
+        "max": 200000000.0,
+        "mean": 1544902.911165494
+      }
+    },
+    "player_id_dtype": "int64"
+  },
+  {
+    "file": "player_injuries.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/player_injuries/player_injuries.csv",
+    "status": "OK",
+    "rows": 143195,
+    "columns": 7,
+    "column_names": [
+      "player_id",
+      "season_name",
+      "injury_reason",
+      "from_date",
+      "end_date",
+      "days_missed",
+      "games_missed"
+    ],
+    "dtypes": {
+      "player_id": "int64",
+      "season_name": "object",
+      "injury_reason": "object",
+      "from_date": "object",
+      "end_date": "object",
+      "days_missed": "float64",
+      "games_missed": "int64"
+    },
+    "missing_rate": {
+      "player_id": 0.0,
+      "season_name": 0.0,
+      "injury_reason": 0.0,
+      "from_date": 0.0002,
+      "end_date": 0.0106,
+      "days_missed": 0.0002,
+      "games_missed": 0.0
+    },
+    "nunique": {
+      "player_id": 34561,
+      "season_name": 46,
+      "injury_reason": 349,
+      "from_date": 8133,
+      "end_date": 8114,
+      "days_missed": 866,
+      "games_missed": 135
+    },
+    "numeric_stats": {
+      "player_id": {
+        "min": 2.0,
+        "max": 1396965.0,
+        "mean": 253159.29094591292
+      },
+      "days_missed": {
+        "min": 1.0,
+        "max": 8655.0,
+        "mean": 51.71929064837644
+      },
+      "games_missed": {
+        "min": 0.0,
+        "max": 208.0,
+        "mean": 6.628478647997486
+      }
+    },
+    "player_id_dtype": "int64"
+  },
+  {
+    "file": "player_national_performances.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/player_national_performances/player_national_performances.csv",
+    "status": "OK",
+    "rows": 92701,
+    "columns": 9,
+    "column_names": [
+      "player_id",
+      "team_id",
+      "matches",
+      "goals",
+      "shirt_number",
+      "debut",
+      "coach_id",
+      "debut_game_id",
+      "career_state"
+    ],
+    "dtypes": {
+      "player_id": "int64",
+      "team_id": "int64",
+      "matches": "int64",
+      "goals": "int64",
+      "shirt_number": "int64",
+      "debut": "float64",
+      "coach_id": "float64",
+      "debut_game_id": "float64",
+      "career_state": "object"
+    },
+    "missing_rate": {
+      "player_id": 0.0,
+      "team_id": 0.0,
+      "matches": 0.0,
+      "goals": 0.0,
+      "shirt_number": 0.0,
+      "debut": 1.0,
+      "coach_id": 0.3983,
+      "debut_game_id": 0.3274,
+      "career_state": 0.0
+    },
+    "nunique": {
+      "player_id": 36339,
+      "team_id": 1108,
+      "matches": 166,
+      "goals": 73,
+      "shirt_number": 56,
+      "debut": 0,
+      "coach_id": 3117,
+      "debut_game_id": 20163,
+      "career_state": 4
+    },
+    "numeric_stats": {
+      "player_id": {
+        "min": 1.0,
+        "max": 1428280.0,
+        "mean": 282054.2096309641
+      },
+      "team_id": {
+        "min": 3262.0,
+        "max": 134572.0,
+        "mean": 21036.99984897682
+      },
+      "matches": {
+        "min": 0.0,
+        "max": 223.0,
+        "mean": 7.336026580080042
+      },
+      "goals": {
+        "min": 0.0,
+        "max": 141.0,
+        "mean": 0.9113817542421333
+      },
+      "shirt_number": {
+        "min": 0.0,
+        "max": 255.0,
+        "mean": 4.758503144518398
+      },
+      "debut": {
+        "min": null,
+        "max": null,
+        "mean": null
+      },
+      "coach_id": {
+        "min": 2.0,
+        "max": 147663.0,
+        "mean": 18948.81331683967
+      },
+      "debut_game_id": {
+        "min": 263.0,
+        "max": 4729550.0,
+        "mean": 2864735.8803605223
+      }
+    },
+    "player_id_dtype": "int64"
+  },
+  {
+    "file": "team_competitions_seasons.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/team_competitions_seasons/team_competitions_seasons.csv",
+    "status": "OK",
+    "rows": 196378,
+    "columns": 7,
+    "column_names": [
+      "club_id",
+      "team_name",
+      "season_id",
+      "competition_name",
+      "competition_id",
+      "club_division",
+      "_last_modified_at"
+    ],
+    "dtypes": {
+      "club_id": "int64",
+      "team_name": "object",
+      "season_id": "int64",
+      "competition_name": "object",
+      "competition_id": "object",
+      "club_division": "object",
+      "_last_modified_at": "object"
+    },
+    "missing_rate": {
+      "club_id": 0.0,
+      "team_name": 0.0,
+      "season_id": 0.0,
+      "competition_name": 0.1639,
+      "competition_id": 0.1639,
+      "club_division": 0.1639,
+      "_last_modified_at": 0.0
+    },
+    "nunique": {
+      "club_id": 2175,
+      "team_name": 2175,
+      "season_id": 26,
+      "competition_name": 164,
+      "competition_id": 168,
+      "club_division": 164,
+      "_last_modified_at": 1770
+    },
+    "numeric_stats": {
+      "club_id": {
+        "min": 1.0,
+        "max": 133273.0,
+        "mean": 13934.64638605139
+      },
+      "season_id": {
+        "min": 2000.0,
+        "max": 2025.0,
+        "mean": 2013.4610241473079
+      }
+    }
+  },
+  {
+    "file": "transfer_history.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-datasets/transfer_history/transfer_history.csv",
+    "status": "OK",
+    "rows": 1101440,
+    "columns": 10,
+    "column_names": [
+      "player_id",
+      "season_name",
+      "transfer_date",
+      "from_team_id",
+      "from_team_name",
+      "to_team_id",
+      "to_team_name",
+      "transfer_type",
+      "value_at_transfer",
+      "transfer_fee"
+    ],
+    "dtypes": {
+      "player_id": "int64",
+      "season_name": "object",
+      "transfer_date": "object",
+      "from_team_id": "int64",
+      "from_team_name": "object",
+      "to_team_id": "int64",
+      "to_team_name": "object",
+      "transfer_type": "object",
+      "value_at_transfer": "int64",
+      "transfer_fee": "int64"
+    },
+    "missing_rate": {
+      "player_id": 0.0,
+      "season_name": 0.0,
+      "transfer_date": 0.0005,
+      "from_team_id": 0.0,
+      "from_team_name": 0.0,
+      "to_team_id": 0.0,
+      "to_team_name": 0.0,
+      "transfer_type": 0.0,
+      "value_at_transfer": 0.0,
+      "transfer_fee": 0.0
+    },
+    "nunique": {
+      "player_id": 117944,
+      "season_name": 62,
+      "transfer_date": 10954,
+      "from_team_id": 42463,
+      "from_team_name": 44734,
+      "to_team_id": 38473,
+      "to_team_name": 40765,
+      "transfer_type": 4,
+      "value_at_transfer": 309,
+      "transfer_fee": 1718
+    },
+    "numeric_stats": {
+      "player_id": {
+        "min": 1.0,
+        "max": 1459023.0,
+        "mean": 322670.9140942766
+      },
+      "from_team_id": {
+        "min": 1.0,
+        "max": 134587.0,
+        "mean": 18323.10615739396
+      },
+      "to_team_id": {
+        "min": 1.0,
+        "max": 134587.0,
+        "mean": 16614.221628958454
+      },
+      "value_at_transfer": {
+        "min": 0.0,
+        "max": 180000000.0,
+        "mean": 321079.8136984311
+      },
+      "transfer_fee": {
+        "min": 0.0,
+        "max": 222000000.0,
+        "mean": 113768.10648423882
+      }
+    },
+    "player_id_dtype": "int64"
+  },
+  {
+    "file": "transfers.csv",
+    "path": "/Users/nsfz020211011/workspace/TransferValue-A-Data-Science-Analysis-of-Football-Player-Market-Values/football-transfers-data/dataset/transfers.csv",
+    "status": "OK",
+    "rows": 70006,
+    "columns": 23,
+    "column_names": [
+      "league",
+      "season",
+      "window",
+      "team_id",
+      "team_name",
+      "team_country",
+      "dir",
+      "player_id",
+      "player_name",
+      "player_age",
+      "player_nation",
+      "player_nation2",
+      "player_pos",
+      "counter_team_id",
+      "counter_team_name",
+      "counter_team_country",
+      "transfer_fee_amnt",
+      "market_val_amnt",
+      "is_free",
+      "is_loan",
+      "is_loan_end",
+      "is_retired",
+      "transfer_id"
+    ],
+    "dtypes": {
+      "league": "object",
+      "season": "int64",
+      "window": "object",
+      "team_id": "int64",
+      "team_name": "object",
+      "team_country": "object",
+      "dir": "object",
+      "player_id": "int64",
+      "player_name": "object",
+      "player_age": "float64",
+      "player_nation": "object",
+      "player_nation2": "object",
+      "player_pos": "object",
+      "counter_team_id": "object",
+      "counter_team_name": "object",
+      "counter_team_country": "object",
+      "transfer_fee_amnt": "float64",
+      "market_val_amnt": "float64",
+      "is_free": "bool",
+      "is_loan": "bool",
+      "is_loan_end": "bool",
+      "is_retired": "bool",
+      "transfer_id": "int64"
+    },
+    "missing_rate": {
+      "league": 0.0,
+      "season": 0.0,
+      "window": 0.0,
+      "team_id": 0.0,
+      "team_name": 0.0,
+      "team_country": 0.0,
+      "dir": 0.0,
+      "player_id": 0.0,
+      "player_name": 0.0,
+      "player_age": 0.0002,
+      "player_nation": 0.0001,
+      "player_nation2": 0.6689,
+      "player_pos": 0.0,
+      "counter_team_id": 0.0,
+      "counter_team_name": 0.0,
+      "counter_team_country": 0.0,
+      "transfer_fee_amnt": 0.5963,
+      "market_val_amnt": 0.2752,
+      "is_free": 0.0,
+      "is_loan": 0.0,
+      "is_loan_end": 0.0,
+      "is_retired": 0.0,
+      "transfer_id": 0.0
+    },
+    "nunique": {
+      "league": 7,
+      "season": 13,
+      "window": 2,
+      "team_id": 239,
+      "team_name": 243,
+      "team_country": 7,
+      "dir": 2,
+      "player_id": 17580,
+      "player_name": 17103,
+      "player_age": 33,
+      "player_nation": 168,
+      "player_nation2": 158,
+      "player_pos": 16,
+      "counter_team_id": 3359,
+      "counter_team_name": 3610,
+      "counter_team_country": 125,
+      "transfer_fee_amnt": 796,
+      "market_val_amnt": 137,
+      "is_free": 2,
+      "is_loan": 2,
+      "is_loan_end": 2,
+      "is_retired": 2,
+      "transfer_id": 58640
+    },
+    "numeric_stats": {
+      "season": {
+        "min": 2009.0,
+        "max": 2021.0,
+        "mean": 2014.9359340627946
+      },
+      "team_id": {
+        "min": 2.0,
+        "max": 23826.0,
+        "mean": 1245.3737251092764
+      },
+      "player_id": {
+        "min": 6.0,
+        "max": 936900.0,
+        "mean": 161415.17828471845
+      },
+      "player_age": {
+        "min": 12.0,
+        "max": 1775.0,
+        "mean": 24.165637948278327
+      },
+      "transfer_fee_amnt": {
+        "min": 0.0,
+        "max": 550000000.0,
+        "mean": 3762224.5692247814
+      },
+      "market_val_amnt": {
+        "min": 10000.0,
+        "max": 160000000.0,
+        "mean": 3557930.7082889914
+      },
+      "transfer_id": {
+        "min": 68451.0,
+        "max": 3633188.0,
+        "mean": 1518057.286589721
+      }
+    },
+    "player_id_dtype": "int64"
+  }
+]

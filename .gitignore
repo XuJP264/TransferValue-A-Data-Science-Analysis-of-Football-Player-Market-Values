@@ -1,0 +1,15 @@
+# Virtual environment
+venv/
+
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Large CSV data files (not suitable for git)
+*.csv
+
+# Python
+__pycache__/
+*.pyc
