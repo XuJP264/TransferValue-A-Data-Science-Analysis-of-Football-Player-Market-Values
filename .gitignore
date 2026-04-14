@@ -7,9 +7,15 @@ venv/
 # Claude Code
 .claude/
 
-# Large CSV data files (not suitable for git)
-*.csv
-
 # Python
 __pycache__/
 *.pyc
+
+# Data files — too large for GitHub, keep local only
+*.csv
+*.csv.gz
+*.db
+*.json
+
+# Raw dataset folder — contains only CSVs, not useful without the data
+football-datasets/
